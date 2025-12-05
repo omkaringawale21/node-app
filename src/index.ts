@@ -14,8 +14,9 @@ app.get("/", (req: Request, res: Response) => {
   return res.send("It's working 🙌");
 });
 
-
-
+app.get("/health", (req: Request, res: Response) => {
+  return res.send("Server is healthy 💪");
+});
 
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
