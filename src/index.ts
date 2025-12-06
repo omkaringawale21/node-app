@@ -18,6 +18,10 @@ app.get("/health", (req: Request, res: Response) => {
   return res.send("Server is healthy 💪");
 });
 
+app.get("/file-reader", (req: Request, res: Response) => {
+  return res.send("File reader is activated 💪");
+});
+
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 
